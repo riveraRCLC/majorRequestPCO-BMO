@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
@@ -12,74 +12,53 @@
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <title>Responsive Regisration Form </title> 
+    <title>Responsive Registration Form</title>
 </head>
 <body>
     <div class="container">
         <header>MAJOR REQUEST PCO</header>
 
-        <form action="#">
-            <div class="form first">
-                <div class="details personal">
-                    <span class="title">FILL HERE</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>DEPARTMENT</label>
-                            <input type="text" placeholder="Enter your Department" required>
-                        </div>
-                        <div class="input-field">
-                            <label>DATE</label>
-                            <input type="date" placeholder="Enter date" required>
-                        </div>
-                        <!-- Email input field removed -->
-                        <!-- <div class="input-field">
-                            <label>Email</label>
-                            <input type="text" placeholder="Enter your email" required>
-                        </div> -->
-                        <!-- Add a div to maintain layout and spacing -->
-                       
-                        <div class="input-field">
-                            <label>Quantity</label>
-                            <input type="text" placeholder="Enter Quantity" required maxlength="4">
-                        </div>
-                        <div class="input-field">
-                            <label>Requisition</label>
-                    <input type="text" placeholder="Enter Requisition" required maxlength="27">
-                        </div>
-
-                        
-
-                <div class="details ID">
-                    
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Purpose</label>
-                            <input type="text" placeholder="Eg. FOR OFFICE USE" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Requested By</label>
-                            <input type="text" placeholder="Enter Requested by" required>
-                        </div>
-
-                    </div>
-
-                    <button class="nextBtn">
-                        <span class="btnText">Next</span>
-                        <i class="uil uil-navigator"></i>
-                    </button>
-                </div> 
-            </div>
-
-
-                            
-                </div> 
-            </div>
+        <form id="registrationForm">
+            <!-- ... (rest of your HTML form) ... -->
         </form>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("saveButton").addEventListener("click", function () {
+            const department = document.getElementById("department").value;
+            const date = document.getElementById("date").value;
+            const quantity = document.getElementById("quantity").value;
+            const requisition = document.getElementById("requisition").value;
+            const purpose = document.getElementById("purpose").value;
+            const requestedBy = document.getElementById("requestedBy").value;
+
+            const canvas = document.createElement("canvas");
+            canvas.width = 800;
+            canvas.height = 600;
+            const ctx = canvas.getContext("2d");
+            const img = new Image();
+            img.src = "majorP1.jpg"; // Your image file
+
+            img.onload = function () {
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                ctx.font = "20px Arial";
+                ctx.fillStyle = "black";
+                ctx.fillText(`DEPARTMENT: ${department}`, 50, 50);
+                ctx.fillText(`DATE: ${date}`, 50, 100);
+                ctx.fillText(`Quantity: ${quantity}`, 50, 150);
+                ctx.fillText(`Requisition: ${requisition}`, 50, 200);
+                ctx.fillText(`Purpose: ${purpose}`, 50, 250);
+                ctx.fillText(`Requested By: ${requestedBy}`, 50, 300);
+
+                // Convert the canvas to a data URL
+                const dataURL = canvas.toDataURL("image/jpeg");
+
+                // Send the dataURL to the server for saving
+                // You need server-side code to handle file saving to the specified path
+                // Example (Node.js): fs.writeFileSync('D:/New folder/du/majorRequestPCO-BMO/Registration Form/MajorP1.jpg', dataURL, 'base64');
+                // Example (PHP): file_put_contents('D:/New folder/du/majorRequestPCO-BMO/Registration Form/MajorP1.jpg', base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $dataURL)));
+            };
+        });
+    </script>
 </body>
 </html>
