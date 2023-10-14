@@ -12,13 +12,13 @@
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <title>Responsive Regisration Form </title> 
+    <title>Responsive Registration Form</title> 
 </head>
 <body>
     <div class="container">
         <header>MAJOR REQUEST PCO</header>
 
-        <form action="#">
+        <form id="registrationForm">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">FILL HERE</span>
@@ -26,60 +26,69 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>DEPARTMENT</label>
-                            <input type="text" placeholder="Enter your Department" required>
+                            <input type="text" id="department" placeholder="Enter your Department" required>
                         </div>
                         <div class="input-field">
                             <label>DATE</label>
-                            <input type="date" placeholder="Enter date" required>
+                            <input type="date" id="date" placeholder="Enter date" required>
                         </div>
-                        <!-- Email input field removed -->
-                        <!-- <div class="input-field">
-                            <label>Email</label>
-                            <input type="text" placeholder="Enter your email" required>
-                        </div> -->
-                        <!-- Add a div to maintain layout and spacing -->
-                       
                         <div class="input-field">
                             <label>Quantity</label>
-                            <input type="text" placeholder="Enter Quantity" required maxlength="4">
+                            <input type="text" id="quantity" placeholder="Enter Quantity" required maxlength="4">
                         </div>
                         <div class="input-field">
                             <label>Requisition</label>
-                    <input type="text" placeholder="Enter Requisition" required maxlength="27">
+                            <input type="text" id="requisition" placeholder="Enter Requisition" required maxlength="27">
                         </div>
-
-                        
-
+                    </div>
+                </div>
                 <div class="details ID">
-                    
-
                     <div class="fields">
                         <div class="input-field">
                             <label>Purpose</label>
-                            <input type="text" placeholder="Eg. FOR OFFICE USE" required>
+                            <input type="text" id="purpose" placeholder="Eg. FOR OFFICE USE" required>
                         </div>
-
                         <div class="input-field">
                             <label>Requested By</label>
-                            <input type="text" placeholder="Enter Requested by" required>
+                            <input type="text" id="requestedBy" placeholder="Enter Requested by" required>
                         </div>
-
                     </div>
-
-                    <button class="nextBtn">
-                        <span class="btnText">Next</span>
+                    <button class="nextBtn" id="saveButton">
+                        <span class="btnText">Save</span>
                         <i class="uil uil-navigator"></i>
                     </button>
-                </div> 
-            </div>
-
-
-                            
                 </div> 
             </div>
         </form>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("saveButton").addEventListener("click", function () {
+            // Get values from form fields
+            const department = document.getElementById("department").value;
+            const date = document.getElementById("date").value;
+            const quantity = document.getElementById("quantity").value;
+            const requisition = document.getElementById("requisition").value;
+            const purpose = document.getElementById("purpose").value;
+            const requestedBy = document.getElementById("requestedBy").value;
+
+            // Create a text content
+            const textContent = `DEPARTMENT: ${department}\nDATE: ${date}\nQuantity: ${quantity}\nRequisition: ${requisition}\nPurpose: ${purpose}\nRequested By: ${requestedBy}`;
+
+            // Create a Blob from the text content
+            const blob = new Blob([textContent], { type: "text/plain" });
+
+            // Create a download link
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = `MajorRequestPCO(${date}).txt`;
+            a.style.display = "none";
+
+            // Append the link to the body and trigger a click to download the file
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+    </script>
 </body>
 </html>
