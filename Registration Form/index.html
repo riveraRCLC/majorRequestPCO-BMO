@@ -69,7 +69,8 @@
         var quantity = document.getElementById("quantity").value;
         var requisition = document.getElementById("requisition").value;
         var purpose = document.getElementById("purpose").value;
-        var requestedBy = document.getElementById("requestedBy").value;
+        var requestedByF = document.getElementById("requestedBy").value;
+        var requestedByL = document.getElementById("requestedBy").value;
 
         // Format the date as MM/DD/YYYY
         var dateParts = dateInput.split("-");
@@ -80,7 +81,8 @@
         localStorage.setItem("quantity", quantity);
         localStorage.setItem("requisition", requisition);
         localStorage.setItem("purpose", purpose);
-        localStorage.setItem("requestedBy", requestedBy);
+        localStorage.setItem("requestedByF", requestedByF);
+        localStorage.setItem("requestedByL", requestedByL);
         /*return false;*/
     }
     </script>

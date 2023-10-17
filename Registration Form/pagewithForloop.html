@@ -26,29 +26,29 @@
         <div class="banner-textQUANT"><h2 id="quantity"></h2></div>
         <div class="banner-textBODY"><h2 id="requisition"></h2></div>
         <div class="banner-textPURPOSE"><h2 id="purpose"></h2></div>
-        <div class="banner-textDEPTHEAD"><h2 id="requestedBy"></h2></div>
-        <div class="banner-textDEPTHEAD2"><h2 id="requestedBy"></h2></div>
+        <div class="banner-textDEPTHEAD"><h2 id="requestedByF"></h2></div>
+        <div class="banner-textDEPTHEAD2"><h2 id="requestedByL"></h2></div>
         
     </div>
     <div class="banner-card" id="printableArea2">
         <img src="p2.jpg" alt="logo picture">        
-        <div class="banner-textDEPT"><h2>C5 & C6 </h2></div>
-        <div class="banner-textDATE"><h2>10/16/2023 </h2></div>
-        <div class="banner-textQUANT"><h2>1000</h2></div>
-        <div class="banner-textBODY"><h2>10/16/2023</h2></div>
-        <div class="banner-textPURPOSE"><h2>FOR OFFICE USE</h2></div>
-        <div class="banner-textDEPTHEAD"><h2>ENGR. DIEGO V. ABAD JR.</h2></div>
-        <div class="banner-textDEPTHEAD2"><h2>ENGR. DIEGO V. ABAD JR.</h2></div>
+        <div class="banner-textDEPT"><h2 id="department"></h2></div>
+        <div class="banner-textDATE"><h2 id="date"></h2></div>
+        <div class="banner-textQUANT"><h2 id="quantity"></h2></div>
+        <div class="banner-textBODY"><h2 id="requisition"></h2></div>
+        <div class="banner-textPURPOSE"><h2 id="purpose"></h2></div>
+        <div class="banner-textDEPTHEAD"><h2 id="requestedByF"></h2></div>
+        <div class="banner-textDEPTHEAD2"><h2 id="requestedByL"></h2></div>
     </div>
     <div class="banner-card" id="printableArea3">
         <img src="p3.jpg" alt="logo picture">        
-        <div class="banner-textDEPT"><h2>C5 & C6 </h2></div>
-        <div class="banner-textDATE"><h2>10/16/2023 </h2></div>
-        <div class="banner-textQUANT"><h2>1000</h2></div>
-        <div class="banner-textBODY"><h2>10/16/2023</h2></div>
-        <div class="banner-textPURPOSE"><h2>FOR OFFICE USE</h2></div>
-        <div class="banner-textDEPTHEAD"><h2>ENGR. DIEGO V. ABAD JR.</h2></div>
-        <div class="banner-textDEPTHEAD2"><h2>ENGR. DIEGO V. ABAD JR.</h2></div>
+        <div class="banner-textDEPT"><h2 id="department"></h2></div>
+        <div class="banner-textDATE"><h2 id="date"></h2></div>
+        <div class="banner-textQUANT"><h2 id="quantity"></h2></div>
+        <div class="banner-textBODY"><h2 id="requisition"></h2></div>
+        <div class="banner-textPURPOSE"><h2 id="purpose"></h2></div>
+        <div class="banner-textDEPTHEAD"><h2 id="requestedByF"></h2></div>
+        <div class="banner-textDEPTHEAD2"><h2 id="requestedByL"></h2></div>
     </div>
     
     <script>
@@ -59,8 +59,26 @@
         document.getElementById("quantity").textContent = localStorage.getItem("quantity");
         document.getElementById("requisition").textContent = localStorage.getItem("requisition");
         document.getElementById("purpose").textContent = localStorage.getItem("purpose");
-        document.getElementById("requestedBy").textContent = localStorage.getItem("requestedBy");
+        document.getElementById("requestedByF").textContent = localStorage.getItem("requestedByF");
+        document.getElementById("requestedByL").textContent = localStorage.getItem("requestedByL");
         
+        var storedDate2 = localStorage.getItem("date2"); // Use the correct key
+        document.getElementById("department2").textContent = localStorage.getItem("department2"); // Use the correct key
+        document.getElementById("date2").textContent = storedDate2;
+        document.getElementById("quantity2").textContent = localStorage.getItem("quantity2");
+        document.getElementById("requisition2").textContent = localStorage.getItem("requisition2");
+        document.getElementById("purpose2").textContent = localStorage.getItem("purpose2");
+        document.getElementById("requestedBy2").textContent = localStorage.getItem("requestedBy2");
+
+    // Retrieve data from localStorage and populate the elements for the third printable area
+        var storedDate3 = localStorage.getItem("date3"); // Use the correct key
+        document.getElementById("department3").textContent = localStorage.getItem("department3"); // Use the correct key
+        document.getElementById("date3").textContent = storedDate3;
+        document.getElementById("quantity3").textContent = localStorage.getItem("quantity3");
+        document.getElementById("requisition3").textContent = localStorage.getItem("requisition3");
+        document.getElementById("purpose3").textContent = localStorage.getItem("purpose3");
+        document.getElementById("requestedBy3").textContent = localStorage.getItem("requestedBy3");
+
     </script>
     
     <script>
