@@ -15,7 +15,11 @@ body{
 }
 
 
-
+div, aside, button {
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+  }
 .printableArea{
     position: relative;
     max-width: 1000px;
