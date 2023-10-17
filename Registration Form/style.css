@@ -41,14 +41,43 @@ body{
     color: #000000;
     padding: 20px;
 }
+.banner-textQUANT{
+    position: absolute;
+    top: 260px ;
+    left: 120px;
+    color: #000000;
+    padding: 20px;
+}
 .banner-textBODY{
     position: absolute;
-    top: 127px ;
-    left: 1200px;
+    top: 260px ;
+    left: 220px;
+    color: #000000;
+    padding: 20px;
+}
+.banner-textPURPOSE{
+    position: absolute;
+    top: 800px ;
+    left: 220px;
     color: #000000;
     padding: 20px;
 }
 
+.banner-textDEPTHEAD{
+    position: absolute;
+    top: 900px ;
+    left: 198px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textDEPTHEAD2{
+    position: absolute;
+    top: 900px ;
+    left: 698px;
+    color: #000000;
+    padding: 20px;
+}
 
 
 
