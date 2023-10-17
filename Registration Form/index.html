@@ -63,23 +63,26 @@
     </div>
 
     <script>
-            function passValues(){
-                var department = document.getElementById("department").value;
-                var date = document.getElementById("date").value;
-                var quantity = document.getElementById("quantity").value;
-                var requisition = document.getElementById("requisition").value;                
-                var purpose = document.getElementById("purpose").value;
-                var requestedBy = document.getElementById("requestedBy").value;
+             function passValues() {
+        var department = document.getElementById("department").value;
+        var dateInput = document.getElementById("date").value;
+        var quantity = document.getElementById("quantity").value;
+        var requisition = document.getElementById("requisition").value;
+        var purpose = document.getElementById("purpose").value;
+        var requestedBy = document.getElementById("requestedBy").value;
 
-                localStorage.setItem("department",department);
-                localStorage.setItem("date",date);
-                localStorage.setItem("quantity",quantity);
-                localStorage.setItem("requisition",requisition);
-                localStorage.setItem("purpose",purpose);
-                localStorage.setItem("requestedBy",requestedBy);
-                
-                return false;       
-            }
+        // Format the date as MM/DD/YYYY
+        var dateParts = dateInput.split("-");
+        var formattedDate = dateParts[1] + "/" + dateParts[2] + "/" + dateParts[0];
+
+        localStorage.setItem("department", department);
+        localStorage.setItem("date", formattedDate);
+        localStorage.setItem("quantity", quantity);
+        localStorage.setItem("requisition", requisition);
+        localStorage.setItem("purpose", purpose);
+        localStorage.setItem("requestedBy", requestedBy);
+        /*return false;*/
+    }
     </script>
 </body>
 </html>
