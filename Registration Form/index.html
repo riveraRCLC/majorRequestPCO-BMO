@@ -18,7 +18,7 @@
     <div class="container">
         <header>MAJOR REQUEST PCO</header>
 
-        <form id="registrationForm">
+        <form action="pagewithForloop.html" id="registrationForm">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">FILL HERE</span>
@@ -53,8 +53,8 @@
                             <input type="text" id="requestedBy" placeholder="Enter Requested by" required>
                         </div>
                     </div>
-                    <button class="nextBtn" id="saveButton">
-                        <span class="btnText">Save</span>
+                    <button type="submit" value="Click" onclick="passValues();">
+                        Save
                         <i class="uil uil-navigator"></i>
                     </button>
                 </div> 
@@ -63,32 +63,23 @@
     </div>
 
     <script>
-        document.getElementById("saveButton").addEventListener("click", function () {
-            // Get values from form fields
-            const department = document.getElementById("department").value;
-            const date = document.getElementById("date").value;
-            const quantity = document.getElementById("quantity").value;
-            const requisition = document.getElementById("requisition").value;
-            const purpose = document.getElementById("purpose").value;
-            const requestedBy = document.getElementById("requestedBy").value;
+            function passValues(){
+                var department = document.getElementById("department").value;
+                var date = document.getElementById("date").value;
+                var quantity = document.getElementById("quantity").value;
+                var requisition = document.getElementById("requisition").value;                
+                var purpose = document.getElementById("purpose").value;
+                var requestedBy = document.getElementById("requestedBy").value;
 
-            // Create a text content
-            const textContent = `DEPARTMENT: ${department}\nDATE: ${date}\nQuantity: ${quantity}\nRequisition: ${requisition}\nPurpose: ${purpose}\nRequested By: ${requestedBy}`;
-
-            // Create a Blob from the text content
-            const blob = new Blob([textContent], { type: "text/plain" });
-
-            // Create a download link
-            const a = document.createElement("a");
-            a.href = URL.createObjectURL(blob);
-            a.download = `MajorRequestPCO(${date}).txt`;
-            a.style.display = "none";
-
-            // Append the link to the body and trigger a click to download the file
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        });
+                localStorage.setItem("department",department);
+                localStorage.setItem("date",date);
+                localStorage.setItem("quantity",quantity);
+                localStorage.setItem("requisition",requisition);
+                localStorage.setItem("purpose",purpose);
+                localStorage.setItem("requestedBy",requestedBy);
+                
+                return false;       
+            }
     </script>
 </body>
 </html>

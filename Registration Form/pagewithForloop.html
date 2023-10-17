@@ -12,19 +12,22 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
     <title>Printable Area</title>
+
+    
 </head>
 
 <body>
+    
     <input type="button" onclick="printDiv()" value="Print a div!" />
     <div class="banner-card" id="printableArea1">
         <img src="p1.jpg" alt="logo picture">        
-        <div class="banner-textDEPT"><h2>C5 & C6 </h2></div>
-        <div class="banner-textDATE"><h2>10/16/2023 </h2></div>
-        <div class="banner-textQUANT"><h2>1000</h2></div>
-        <div class="banner-textBODY"><h2>10/16/2023</h2></div>
-        <div class="banner-textPURPOSE"><h2>FOR OFFICE USE</h2></div>
-        <div class="banner-textDEPTHEAD"><h2>ENGR. DIEGO V. ABAD JR.</h2></div>
-        <div class="banner-textDEPTHEAD2"><h2>ENGR. DIEGO V. ABAD JR.</h2></div>
+        <div class="banner-textDEPT"><h2 id="department"></h2></div>
+        <div class="banner-textDATE"><h2 id="date"></h2></div>
+        <div class="banner-textQUANT"><h2 id="quantity"></h2></div>
+        <div class="banner-textBODY"><h2 id="requisition"></h2></div>
+        <div class="banner-textPURPOSE"><h2 id="purpose"></h2></div>
+        <div class="banner-textDEPTHEAD"><h2 id="requestedBy"></h2></div>
+        <div class="banner-textDEPTHEAD2"><h2 id="requestedBy"></h2></div>
         
     </div>
     <div class="banner-card" id="printableArea2">
@@ -47,8 +50,15 @@
         <div class="banner-textDEPTHEAD"><h2>ENGR. DIEGO V. ABAD JR.</h2></div>
         <div class="banner-textDEPTHEAD2"><h2>ENGR. DIEGO V. ABAD JR.</h2></div>
     </div>
-
     
+    <script>
+        document.getElementById("department").textContent = localStorage.getItem("department");
+        document.getElementById("date").textContent = localStorage.getItem("date");
+        document.getElementById("quantity").textContent = localStorage.getItem("quantity");
+        document.getElementById("requisition").textContent = localStorage.getItem("requisition");
+        document.getElementById("purpose").textContent = localStorage.getItem("purpose");
+        document.getElementById("requestedBy").textContent = localStorage.getItem("requestedBy");
+    </script>
     
     <script>
         function printDiv() {
