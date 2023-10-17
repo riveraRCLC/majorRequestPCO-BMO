@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ==== Iconscout CSS ==== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <title>Printable Area</title>
+</head>
+
+<body>
+    <input type="button" onclick="printDiv()" value="Print a div!" />
+    <div id="printableArea1">
+        <img src="p1.jpg" alt="logo picture">        
+    </div> <br>
+    <div id="printableArea2">
+        <img src="p2.jpg" alt="logo picture">        
+    </div><br>
+    <div id="printableArea3">
+        <img src="p3.jpg" alt="logo picture">        
+    </div><br>
+
+    
+    
+    <script>
+        function printDiv() {
+            for (let i = 1; i <= 3; i++) {
+                let divName = "printableArea" + i;
+                var printContents = document.getElementById(divName).innerHTML;
+                var originalContents = document.body.innerHTML;
+                document.body.innerHTML = printContents;
+                window.print();
+                document.body.innerHTML = originalContents;
+            }
+        }
+    </script>
+</body>
+</html>
