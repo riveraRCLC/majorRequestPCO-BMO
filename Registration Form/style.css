@@ -12,6 +12,22 @@ body{
     background: #4070f4;
 }
 
+.banner-card{
+    position:relative;
+}
+
+.banner-card img{
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-text{
+    position: absolute;
+    top:25% ;
+    color: #000000;
+    padding: 20px;
+}
+
 
 div, aside, button {
     display: block;
