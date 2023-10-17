@@ -20,13 +20,36 @@ body{
     max-width: 100%;
     height: auto;
 }
-
 .banner-text{
     position: absolute;
-    top:25% ;
+    top: 127px ;
+    left: 500px;
     color: #000000;
     padding: 20px;
 }
+.banner-textDEPT{
+    position: absolute;
+    top: 127px ;
+    left: 400px;
+    color: #000000;
+    padding: 20px;
+}
+.banner-textDATE{
+    position: absolute;
+    top: 127px ;
+    left: 1200px;
+    color: #000000;
+    padding: 20px;
+}
+.banner-textBODY{
+    position: absolute;
+    top: 127px ;
+    left: 1200px;
+    color: #000000;
+    padding: 20px;
+}
+
+
 
 
 div, aside, button {
