@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/Registration Form/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Registration Form</title>
+    
+    <style>
+        /* Add some basic styles for the added input fields */
+        .input-field {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>MAJOR REQUEST PCO</header>
+
+        <form action="pagewithForloop.html" id="registrationForm">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">FILL HERE</span>
+                    <div class="fields" id="inputFieldsContainer">
+                        <!-- Your initial input fields go here -->
+                    </div>
+                </div>
+                <div class="details ID">
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Purpose</label>
+                            <input type="text" id="purpose" placeholder="Eg. FOR OFFICE USE" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Requested By</label>
+                            <input type="text" id="requestedBy" placeholder="Enter Requested by" required>
+                        </div>
+                    </div>
+                    <button type="submit" value="Click" onclick="passValues();">
+                        Save
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+        </form>
+        <button id="addInputFieldButton" onclick="addInputField()">Add Input Field</button>
+    </div>
+
+    <script>
+        function passValues() {
+            // Your code to save form values in local storage
+        }
+
+        function addInputField() {
+            var inputFieldsContainer = document.getElementById("inputFieldsContainer");
+            var newInputField = document.createElement("div");
+            newInputField.innerHTML = `
+                <div class="input-field">
+                    <label>Quantity</label>
+                    <input type="text" placeholder="Enter Quantity" required maxlength="4">
+                </div>
+                <div class="input-field">
+                    <label>Requisition</label>
+                    <input type="text" placeholder="Enter Requisition" required maxlength="27">
+                </div>
+            `;
+            inputFieldsContainer.appendChild(newInputField);
+
+            // Scroll the page to show the newly added input fields
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+    </script>
+</body>
+</html>

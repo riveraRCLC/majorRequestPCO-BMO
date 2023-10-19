@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css"> 
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -40,6 +40,10 @@
                             <label>Requisition</label>
                             <input type="text" id="requisition" placeholder="Enter Requisition" required maxlength="27">
                         </div>
+                        <div class="fields" id="inputFieldsContainer">
+                            <!-- Your initial input fields go here -->
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="details ID">
@@ -60,11 +64,31 @@
                 </div> 
             </div>
         </form>
+        <button id="addInputFieldButton" onclick="addInputField()">Add Input Field</button>
     </div>
 
     <script>
-             function passValues() {
-        var department = document.getElementById("department").value;
+        function addInputField() {
+            var inputFieldsContainer = document.getElementById("inputFieldsContainer");
+            var newInputField = document.createElement("div");
+            newInputField.innerHTML = `
+                <div class="input-field">
+                    <label>Quantity</label>
+                    <input type="text" placeholder="Enter Quantity" required maxlength="4">
+                </div>
+                <div class="input-field">
+                    <label>Requisition</label>
+                    <input type="text" placeholder="Enter Requisition" required maxlength="27">
+                </div>
+            `;
+            inputFieldsContainer.appendChild(newInputField);
+
+            // Scroll the page to show the newly added input fields
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+        function passValues() {
+        
+            var department = document.getElementById("department").value;
         var dateInput = document.getElementById("date").value;
         var quantity = document.getElementById("quantity").value;
         var requisition = document.getElementById("requisition").value;
@@ -84,7 +108,7 @@
         localStorage.setItem("requestedByF", requestedByF);
         localStorage.setItem("requestedByL", requestedByL);
         /*return false;*/
-    }
+         }
     </script>
 </body>
 </html>
