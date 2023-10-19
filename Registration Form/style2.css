@@ -6,38 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    max-width: 1000px;
-    width: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Adjust the form's width as needed */
-.container form {
-    width: 100%;
-    max-width: 800px; /* You can adjust this value as per your design */
-    position: relative;
-    min-height: 490px;
-    background-color: #fff;
-    overflow: hidden;
-}
-body {
+body{
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     background: #4070f4;
 }
 
@@ -244,7 +215,6 @@ form.secActive .form.first{
     justify-content: space-between;
     flex-wrap: wrap;
 }
- 
 form .fields .input-field {
     display: flex;
     width: calc(50% - 15px);
@@ -286,7 +256,7 @@ form .fields .input-field2 {
 .input-field input[type="date"]:valid{
     color: #333;
 }
-.container form button{
+.container form button, .backBtn{
     display: flex;
     align-items: center;
     justify-content: center;
