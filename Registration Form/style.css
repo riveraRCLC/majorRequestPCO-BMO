@@ -6,9 +6,38 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the form's width as needed */
+.container form {
+    width: 100%;
+    max-width: 800px; /* You can adjust this value as per your design */
+    position: relative;
+    min-height: 490px;
+    background-color: #fff;
+    overflow: hidden;
+}
+body {
     min-height: 100vh;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #4070f4;
 }
 
