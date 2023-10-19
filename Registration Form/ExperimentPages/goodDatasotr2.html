@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Responsive Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>MAJOR REQUEST PCO</header>
+
+        <form action="pagewithForloop.html" id="registrationForm">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">FILL HERE</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>DEPARTMENT</label>
+                            <input type="text" id="department" placeholder="Enter your Department" required>
+                        </div>
+                        <div class="input-field">
+                            <label>DATE</label>
+                            <input type="date" id="date" placeholder="Enter date" required>
+                        </div>
+                        <div class="input-field2" id="inputFieldsContainer">
+                            <!-- Your initial input fields go here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Purpose</label>
+                            <input type="text" id="purpose" placeholder="Eg. FOR OFFICE USE" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Requested By</label>
+                            <input type="text" id="requestedBy" placeholder="Enter Requested by" required>
+                        </div>
+                    </div>
+                    <button type="submit" id="submitButton">Save <i class="uil uil-navigator"></i></button>
+                </div> 
+            </div>
+        </form>
+        <button id="addInputFieldButton">Add Input Field</button>
+    </div>
+
+    <script>
+        var inputCounter = 0;
+        var maxInputFields = 17;
+
+        function addInputField() {
+            if (inputCounter < maxInputFields) {
+                inputCounter++;
+                var inputFieldsContainer = document.getElementById("inputFieldsContainer");
+                var newInputField = document.createElement("div");
+                newInputField.innerHTML = `
+                <div class="column">
+                    <div class="inner-div">
+                        <div class="input-field">
+                            <input type="text" id="quantity${inputCounter}" name="quantity" placeholder="Enter Quantity" required maxlength="4" style="width: 350px;">
+                        </div>
+                        <div class="input-field"> 
+                            <input type="text" id="requisition${inputCounter}" name="requisition" placeholder="Enter Requisition" required maxlength="27" style="width: 350px;">
+                        </div>
+                    </div>
+                </div>`;
+                inputFieldsContainer.appendChild(newInputField);
+                window.scrollTo(0, document.body.scrollHeight);
+            } else {
+                alert("You've reached the maximum number of additional fields (17).");
+            }
+        }
+
+        document.getElementById("registrationForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+            passValues();
+        });
+
+        function passValues() {
+            // Retrieve and format your form data
+            var department = document.getElementById("department").value;
+            var dateInput = document.getElementById("date").value;
+
+            // Store the data in localStorage
+            localStorage.setItem("department", department);
+            localStorage.setItem("date", dateInput);
+
+            for (var i = 1; i <= inputCounter; i++) {
+                localStorage.setItem(`quantity${i}`, document.getElementById(`quantity${i}`).value);
+                localStorage.setItem(`requisition${i}`, document.getElementById(`requisition${i}`).value);
+            }
+
+            // Additional data
+            localStorage.setItem("purpose", document.getElementById("purpose").value);
+            localStorage.setItem("requestedBy", document.getElementById("requestedBy").value);
+
+            // Redirect to the printable page
+            window.location.href = "pagewithForloop.html";
+        }
+    </script>
+</body>
+</html>

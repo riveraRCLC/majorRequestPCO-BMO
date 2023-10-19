@@ -75,17 +75,25 @@
                             <input type="text" id="requestedBy" placeholder="Enter Requested by" required>
                         </div>
                     </div>
-                    <button type="submit" value="Click" onclick="passValues();">
-                        Save
-                        <i class="uil uil-navigator"></i>
-                    </button>
+
+                    <button type="submit" id="submitButton">Save <i class="uil uil-navigator"></i></button>
+
                 </div> 
             </div>
         </form>
+
         <button id="addInputFieldButton" onclick="addInputField()">Add Input Field</button>
+
     </div>
 
     <script>
+        
+        document.getElementById("registrationForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+        passValues();
+        });
+
+
         var inputCounter = 0;
 
         function addInputField() {

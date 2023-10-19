@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Printable Area</title>
+</head>
+
+<body>
+    <input type="button" onclick="printDiv()" value="Print a div!" />
+
+    <!-- Use a single <img> tag for p1.jpg, p2.jpg, and p3.jpg -->
+    <img src="/Registration Form/p1.jpg" alt="logo picture" id="logo">
+
+    <div class="container">
+        <header>MAJOR REQUEST PCO</header>
+
+        <div id="printableAreas">
+            <!-- JavaScript will populate this section -->
+        </div>
+    </div>
+
+    <script>
+        // Function to populate data from local storage to printable areas
+        function populateData(area) {
+            var fields = document.querySelectorAll(`.printable-area[data-area="${area}"] [data-field]`);
+            fields.forEach(field => {
+                var fieldName = field.getAttribute("data-field");
+                field.textContent = localStorage.getItem(fieldName);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            for (let i = 1; i <= 3; i++) {
+                populateData(i);
+            }
+        });
+
+        // Function to print the selected printable area
+        function printDiv() {
+            window.print();
+        }
+
+        // Generate printable areas dynamically based on the data in local storage
+        window.addEventListener("load", function() {
+            var printableAreas = document.getElementById("printableAreas");
+            for (let i = 1; i <= 3; i++) {
+                var areaData = localStorage.getItem(`area${i}`);
+                if (areaData) {
+                    var data = JSON.parse(areaData);
+                    var area = createPrintableArea(data, i);
+                    printableAreas.appendChild(area);
+                }
+            }
+        });
+
+        function createPrintableArea(data, areaNum) {
+            var div = document.createElement("div");
+            div.classList.add("printable-area");
+            div.dataset.area = areaNum;
+
+            var image = document.getElementById("logo");
+            div.appendChild(image);
+
+            var keys = Object.keys(data);
+            keys.forEach(function(key) {
+                var element = document.createElement("div");
+                element.classList.add("banner-text");
+                element.dataset.field = key;
+                element.textContent = data[key];
+                div.appendChild(element);
+            });
+
+            return div;
+        }
+    </script>
+</body>
+</html>
