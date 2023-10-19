@@ -62,6 +62,8 @@
                         <!-- Your initial input fields go here -->
                     </div>
                 </div>
+
+                
                 <div class="details ID">
                     <div class="fields">
                         <div class="input-field">
@@ -88,14 +90,26 @@
             var inputFieldsContainer = document.getElementById("inputFieldsContainer");
             var newInputField = document.createElement("div");
             newInputField.innerHTML = `
-                <div class="input-field">
-                    
-                    <input type="text" placeholder="Enter Quantity" required maxlength="4">
+            <div class="column">
+                <div class="inner-div">
+                    <div class="input-field" >
+                  
+                        <input type="text" placeholder="Enter Quantity" required maxlength="4">
+
+                    </div>
+
+                    <div class="input-field"> 
+
+                         <input type="text" placeholder="Enter Requisition" required maxlength="27">
+
+                     </div>
+
                 </div>
-                <div class="input-field">
-                    
-                    <input type="text" placeholder="Enter Requisition" required maxlength="27">
-                </div>
+            </div>   
+            
+            
+            
+
             `;
             inputFieldsContainer.appendChild(newInputField);
 

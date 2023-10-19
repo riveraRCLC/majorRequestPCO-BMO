@@ -7,6 +7,39 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.input-field2 .inner-div {
+    display: flex;
+    width: 800px;
+    
+    flex-direction: row;
+    justify-content: space-between; /* Add space between the input fields */
+    margin: 4px 0;
+}
+
+.column {
+    flex: 1;
+    margin: 5px;
+    padding: 1px;
+}
+
+.inner-div {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+}
+
+.input-field {
+    margin: 8px 0; /* Add vertical margin to separate input fields */
+}
+
+.input-field input[type="text"],
+.input-field input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 
 
 .container {
