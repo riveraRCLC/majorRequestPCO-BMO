@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Responsive Registration Form</title>
+</head>
+<body>
+    <!-- Your HTML content -->
+
+    <script>
+        var inputCounter = 0;
+        var quantityArray = [];
+        var requisitionArray = [];
+
+        function addInputField() {
+            inputCounter++;
+            var inputFieldsContainer = document.getElementById("inputFieldsContainer");
+            var newInputField = document.createElement("div");
+            newInputField.innerHTML = `
+            <div class="column">
+                <div class="inner-div">
+                    <div class="input-field">
+                        <input type="text" id="quantity${inputCounter}" name="quantity" placeholder="Enter Quantity" required maxlength="4" style="width: 350px;">
+                    </div>
+                    <div class="input-field"> 
+                        <input type="text" id="requisition${inputCounter}" name="requisition" placeholder="Enter Requisition" required maxlength="27" style="width: 350px;">
+                    </div>
+                </div>
+            </div>`;
+            inputFieldsContainer.appendChild(newInputField);
+
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        document.getElementById("registrationForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Retrieve and format your form data
+            var department = document.getElementById("department").value;
+            var dateInput = document.getElementById("date").value;
+
+            // Store the data in an array
+            var formData = {
+                department: department,
+                date: dateInput,
+                quantity: [],
+                requisition: []
+            };
+
+            for (var i = 1; i <= inputCounter; i++) {
+                formData.quantity.push(document.getElementById(`quantity${i}`).value);
+                formData.requisition.push(document.getElementById(`requisition${i}`).value);
+            }
+
+            // Convert and store formData in local storage as needed
+        });
+    </script>
+</body>
+</html>
