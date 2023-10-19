@@ -108,104 +108,35 @@
             window.scrollTo(0, document.body.scrollHeight);
         }
 
-        function passValues() {
-        
-            var department   = document.getElementById("department").value;
-            var dateInput    = document.getElementById("date").value;
-            
-            var quantity     = document.getElementById("quantity").value;
-            var requisition  = document.getElementById("requisition").value;
-            var quantity1     = document.getElementById("quantity1").value;
-            var requisition1  = document.getElementById("requisition1").value;
-            var quantity2     = document.getElementById("quantity2").value;
-            var requisition2  = document.getElementById("requisition2").value;
-            var quantity3     = document.getElementById("quantity3").value;
-            var requisition3  = document.getElementById("requisition3").value;
-            var quantity4     = document.getElementById("quantity4").value;
-            var requisition4  = document.getElementById("requisition4").value;
-            var quantity5     = document.getElementById("quantity5").value;
-            var requisition5  = document.getElementById("requisition5").value;
-            var quantity6     = document.getElementById("quantity6").value;
-            var requisition6  = document.getElementById("requisition6").value;
-            var quantity7     = document.getElementById("quantity7").value;
-            var requisition7  = document.getElementById("requisition7").value;
-            var quantity8     = document.getElementById("quantity8").value;
-            var requisition8  = document.getElementById("requisition8").value;
-            var quantity9     = document.getElementById("quantity9").value;
-            var requisition9  = document.getElementById("requisition9").value;
-            var quantity10     = document.getElementById("quantity10").value;
-            var requisition10  = document.getElementById("requisition10").value;
-            var quantity11     = document.getElementById("quantity11").value;
-            var requisition11  = document.getElementById("requisition11").value;
-            var quantity12     = document.getElementById("quantity12").value;
-            var requisition12  = document.getElementById("requisition12").value;
-            var quantity13     = document.getElementById("quantity13").value;
-            var requisition13  = document.getElementById("requisition13").value;
-            var quantity14     = document.getElementById("quantity14").value;
-            var requisition14  = document.getElementById("requisition14").value;
-            var quantity15     = document.getElementById("quantity15").value;
-            var requisition15  = document.getElementById("requisition15").value;
-            var quantity16     = document.getElementById("quantity16").value;
-            var requisition16  = document.getElementById("requisition16").value;
-            var quantity17     = document.getElementById("quantity17").value;
-            var requisition17  = document.getElementById("requisition17").value;
-            
-            
-            var purpose      = document.getElementById("purpose").value;
-            var requestedByF = document.getElementById("requestedBy").value;
-            var requestedByL = document.getElementById("requestedBy").value;
+       function passValues() {
+    var department = document.getElementById("department").value;
+    var dateInput = document.getElementById("date").value;
+    var quantities = [];
+    var requisitions = [];
 
-        // Format the date as MM/DD/YYYY
-        var dateParts = dateInput.split("-");
-        var formattedDate = dateParts[1] + "/" + dateParts[2] + "/" + dateParts[0];
+    for (var i = 0; i <= inputCounter; i++) {
+        quantities.push(document.getElementById(`quantity${i}`).value);
+        requisitions.push(document.getElementById(`requisition${i}`).value);
+    }
 
-        localStorage.setItem("department", department);
-        localStorage.setItem("date", formattedDate);
+    var purpose = document.getElementById("purpose").value;
+    var requestedBy = document.getElementById("requestedBy").value;
 
-        localStorage.setItem("quantity", quantity);
-        localStorage.setItem("requisition", requisition);
-        localStorage.setItem("quantity1", quantity1);
-        localStorage.setItem("requisition1", requisition1);
-        localStorage.setItem("quantity2", quantity2);
-        localStorage.setItem("requisition2", requisition2);
-        localStorage.setItem("quantity3", quantity3);
-        localStorage.setItem("requisition3", requisition3);
-        localStorage.setItem("quantity4", quantity4);
-        localStorage.setItem("requisition4", requisition4);
-        localStorage.setItem("quantity5", quantity5);
-        localStorage.setItem("requisition5", requisition5);
-        localStorage.setItem("quantity6", quantity6);
-        localStorage.setItem("requisition6", requisition6);
-        localStorage.setItem("quantity7", quantity7);
-        localStorage.setItem("requisition7", requisition7);
-        localStorage.setItem("quantity8", quantity8);
-        localStorage.setItem("requisition8", requisition8);
-        localStorage.setItem("quantity9", quantity9);
-        localStorage.setItem("requisition9", requisition9);
-        localStorage.setItem("quantity10", quantity10);
-        localStorage.setItem("requisition10", requisition10);
-        localStorage.setItem("quantity11", quantity11);
-        localStorage.setItem("requisition11", requisition11);
-        localStorage.setItem("quantity12", quantity12);
-        localStorage.setItem("requisition12", requisition12);
-        localStorage.setItem("quantity13", quantity13);
-        localStorage.setItem("requisition13", requisition13);
-        localStorage.setItem("quantity14", quantity14);
-        localStorage.setItem("requisition14", requisitio14);
-        localStorage.setItem("quantity15", quantity15);
-        localStorage.setItem("requisition15", requisition15);
-        localStorage.setItem("quantity16", quantity16);
-        localStorage.setItem("requisition16", requisition16);
-        localStorage.setItem("quantity17", quantity17);
-        localStorage.setItem("requisitio17", requisition17);
+    // Format the date as MM/DD/YYYY
+    var dateParts = dateInput.split("-");
+    var formattedDate = dateParts[1] + "/" + dateParts[2] + "/" + dateParts[0];
 
+    // Set quantities and requisitions using different keys for each one
+    for (var i = 1; i <= quantities.length; i++) {
+        localStorage.setItem("quantity" + i, quantities[i - 1]);
+        localStorage.setItem("requisition" + i, requisitions[i - 1]);
+    }
 
-
-        localStorage.setItem("purpose", purpose);
-        localStorage.setItem("requestedByF", requestedByF);
-        localStorage.setItem("requestedByL", requestedByL);
-        /*return false;*/
-         }
+    localStorage.setItem("department", department);
+    localStorage.setItem("date", formattedDate);
+    localStorage.setItem("purpose", purpose);
+    localStorage.setItem("requestedBy", requestedBy);
+}
     </script>
 </body>
 </html>
