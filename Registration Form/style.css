@@ -7,67 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Add some basic styles for the added input fields */
-.input-field {
-    margin: 8px 0;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Style labels in both input fields */
-.input-field label {
-    font-size: 12px;
-    font-weight: 500;
-    color: #2e2e2e;
-}
-
-/* Style input fields in the first column */
-.form.first .input-field input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 8px 0;
-    height: 42px;
-}
-
-/* Style input fields in the second column */
-.form.first .input-field2 .input-field {
-    width: 100%; /* Set the width to 100% for both input fields in the second column */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 8px 0;
-    height: 42px;
-}
-
-/* Style the submit button */
-.container form button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    max-width: 200px;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 5px;
-    margin: 25px 0;
-    background-color: #4070f4;
-    transition: all 0.3s linear;
-    cursor: pointer;
-}
-
-
-
 .input-field2 .inner-div {
     display: flex;
-
+    width: 100%;
     
     flex-direction: row;
     justify-content: space-between; /* Add space between the input fields */
-    margin: 4px 0;
+    margin: -20px 0;
 }
 
 .column {
@@ -126,6 +72,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #4070f4;
+    
 }
 
 
