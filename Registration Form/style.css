@@ -7,9 +7,63 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Add some basic styles for the added input fields */
+.input-field {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style labels in both input fields */
+.input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+/* Style input fields in the first column */
+.form.first .input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 8px 0;
+    height: 42px;
+}
+
+/* Style input fields in the second column */
+.form.first .input-field2 .input-field {
+    width: 100%; /* Set the width to 100% for both input fields in the second column */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 8px 0;
+    height: 42px;
+}
+
+/* Style the submit button */
+.container form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+
+
 .input-field2 .inner-div {
     display: flex;
-    width: 800px;
+
     
     flex-direction: row;
     justify-content: space-between; /* Add space between the input fields */
@@ -74,72 +128,6 @@ body {
     background: #4070f4;
 }
 
-.banner-card{
-    position:relative;
-}
-
-.banner-card img{
-    max-width: 100%;
-    height: auto;
-}
-.banner-text{
-    position: absolute;
-    top: 127px ;
-    left: 500px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textDEPT{
-    position: absolute;
-    top: 127px ;
-    left: 400px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textDATE{
-    position: absolute;
-    top: 127px ;
-    left: 1200px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textPURPOSE{
-    position: absolute;
-    top: 800px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-
-.banner-textDEPTHEAD{
-    position: absolute;
-    top: 900px ;
-    left: 198px;
-    color: #000000;
-    padding: 20px;
-}
-
-.banner-textDEPTHEAD2{
-    position: absolute;
-    top: 900px ;
-    left: 698px;
-    color: #000000;
-    padding: 20px;
-}
 
 
 
@@ -148,68 +136,7 @@ div, aside, button {
     margin: 1rem auto;
     text-align: center;
   }
-.printableArea1{
-    position: relative;
-    max-width: 1000px;
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-.printableArea1 .container{
-   
-    width: 1755;
-    height: 1275;
-}
-.printableArea1 .container img{
-    width: 100%;
-    height: 100%;
-}
 
-.printableArea2{
-    position: relative;
-    max-width: 1000px;
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-.printableArea2 .container{
-   
-    width: 1755;
-    height: 1275;
-}
-.printableArea2 .container img{
-    width: 100%;
-    height: 100%;
-}
-
-.printableArea3{
-    position: relative;
-    max-width: 1000px;
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-.printableArea3 .container{
-   
-    width: 1755;
-    height: 1275;
-}
-.printableArea3 .container img{
-    width: 100%;
-    height: 100%;
-}
 .container{
     position: relative;
     max-width: 1000px;
