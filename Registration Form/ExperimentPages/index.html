@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+   <link rel="stylesheet" href="style.css"> 
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Registration Form</title> 
+
+    <style>
+        /* Add some basic styles for the added input fields */
+        .input-field {
+            margin-bottom: 10px;
+        }
+        
+        .form.first {
+            overflow-y: scroll; /* Enable scrolling for the container */
+            max-height: 400px; /* Set a maximum height to trigger scrolling */
+        }
+        #idinput-field{
+             overflow-y: scroll; /* Enable scrolling for the container */
+            max-height: 400px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>MAJOR REQUEST PCO</header>
+
+        <form action="pagewithForloop.html" id="registrationForm">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">FILL HERE</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>DEPARTMENT</label>
+                            <input type="text" id="department" placeholder="Enter your Department" required>
+                        </div>
+                        <div class="input-field">
+                            <label>DATE</label>
+                            <input type="date" id="date" placeholder="Enter date" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Quantity</label>
+                            <input type="text" id="quantity" placeholder="Enter Quantity" required maxlength="4">
+                        </div>
+                        <div class="input-field">
+                            <label>Requisition</label>
+                            <input type="text" id="requisition" placeholder="Enter Requisition" required maxlength="27">
+                        </div>                     
+                        
+                    </div>
+                    <div class="input-field2" id="inputFieldsContainer">
+                        <!-- Your initial input fields go here -->
+                    </div>
+                </div>
+
+                
+                <div class="details ID">
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Purpose</label>
+                            <input type="text" id="purpose" placeholder="Eg. FOR OFFICE USE" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Requested By</label>
+                            <input type="text" id="requestedBy" placeholder="Enter Requested by" required>
+                        </div>
+                    </div>
+                    <button type="submit" value="Click" onclick="passValues();">
+                        Save
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+        </form>
+        <button id="addInputFieldButton" onclick="addInputField()">Add Input Field</button>
+    </div>
+
+    <script>
+        function addInputField() {
+            var inputFieldsContainer = document.getElementById("inputFieldsContainer");
+            var newInputField = document.createElement("div");
+            newInputField.innerHTML = `
+            <div class="column">
+                <div class="inner-div">
+                    <div class="input-field" >
+                  
+                        <input type="text" placeholder="Enter Quantity" required maxlength="4">
+
+                    </div>
+
+                    <div class="input-field"> 
+
+                         <input type="text" placeholder="Enter Requisition" required maxlength="27">
+
+                     </div>
+
+                </div>
+            </div>   
+            
+            
+            
+
+            `;
+            inputFieldsContainer.appendChild(newInputField);
+
+            // Scroll the page to show the newly added input fields
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+        function passValues() {
+        
+            var department = document.getElementById("department").value;
+        var dateInput = document.getElementById("date").value;
+        var quantity = document.getElementById("quantity").value;
+        var requisition = document.getElementById("requisition").value;
+        var purpose = document.getElementById("purpose").value;
+        var requestedByF = document.getElementById("requestedBy").value;
+        var requestedByL = document.getElementById("requestedBy").value;
+
+        // Format the date as MM/DD/YYYY
+        var dateParts = dateInput.split("-");
+        var formattedDate = dateParts[1] + "/" + dateParts[2] + "/" + dateParts[0];
+
+        localStorage.setItem("department", department);
+        localStorage.setItem("date", formattedDate);
+        localStorage.setItem("quantity", quantity);
+        localStorage.setItem("requisition", requisition);
+        localStorage.setItem("purpose", purpose);
+        localStorage.setItem("requestedByF", requestedByF);
+        localStorage.setItem("requestedByL", requestedByL);
+        /*return false;*/
+         }
+    </script>
+</body>
+</html>
