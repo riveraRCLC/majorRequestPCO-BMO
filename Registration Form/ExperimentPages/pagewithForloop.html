@@ -23,8 +23,17 @@
         <img src="p1.jpg" alt="logo picture">        
         <div class="banner-textDEPT"><h2 id="department"></h2></div>
         <div class="banner-textDATE"><h2 id="date"></h2></div>
+
         <div class="banner-textQUANT"><h2 id="quantity"></h2></div>
         <div class="banner-textBODY"><h2 id="requisition"></h2></div>
+
+        <div class="banner-textQUANT2"><h2 id="MYquantity"></h2></div>
+        <div class="banner-textBODY2"><h2 id="MYrequisition"></h2></div>
+        <div class="banner-textQUANT3"><h2 id="THEquantity"></h2></div>
+        <div class="banner-textBODY3"><h2 id="THErequisition"></h2></div>
+        <div class="banner-textQUANT4"><h2 id="PRIquantity"></h2></div>
+        <div class="banner-textBODY4"><h2 id="PRIrequisition"></h2></div>
+
         <div class="banner-textPURPOSE"><h2 id="purpose"></h2></div>
         <div class="banner-textDEPTHEAD"><h2 id="requestedByF"></h2></div>
         <div class="banner-textDEPTHEAD2"><h2 id="requestedByL"></h2></div>
@@ -56,8 +65,17 @@
         /*document.getElementById("date").textContent = localStorage.getItem("date");*/
         var storedDate = localStorage.getItem("date");
         document.getElementById("date").textContent = storedDate;
+
         document.getElementById("quantity").textContent = localStorage.getItem("quantity");
         document.getElementById("requisition").textContent = localStorage.getItem("requisition");
+
+        document.getElementById("MYquantity").textContent = localStorage.getItem("MYquantity");
+        document.getElementById("MYrequisition").textContent = localStorage.getItem("MYrequisition");
+        document.getElementById("THEquantity").textContent = localStorage.getItem("THEquantity");
+        document.getElementById("THErequisition").textContent = localStorage.getItem("THErequisition");
+        document.getElementById("PRIquantity").textContent = localStorage.getItem("PRIquantity");
+        document.getElementById("PRIrequisition").textContent = localStorage.getItem("PRIrequisition");
+
         document.getElementById("purpose").textContent = localStorage.getItem("purpose");
         document.getElementById("requestedByF").textContent = localStorage.getItem("requestedByF");
         document.getElementById("requestedByL").textContent = localStorage.getItem("requestedByL");

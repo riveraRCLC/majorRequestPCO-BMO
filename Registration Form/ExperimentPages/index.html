@@ -48,6 +48,8 @@
                             <label>DATE</label>
                             <input type="date" id="date" placeholder="Enter date" required>
                         </div>
+
+
                         <div class="input-field">
                             <label>Quantity</label>
                             <input type="text" id="quantity" placeholder="Enter Quantity" required maxlength="4">
@@ -55,15 +57,39 @@
                         <div class="input-field">
                             <label>Requisition</label>
                             <input type="text" id="requisition" placeholder="Enter Requisition" required maxlength="27">
-                        </div>                     
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Quantity</label>
+                            <input type="text" id="MYquantity" placeholder="Enter Quantity" required maxlength="4">
+                        </div>
+                        <div class="input-field">
+                            <label>Requisition</label>
+                            <input type="text" id="MYrequisition" placeholder="Enter Requisition" required maxlength="27">
+                        </div>   
+                        <div class="input-field">
+                            <label>Quantity</label>
+                            <input type="text" id="THEquantity" placeholder="Enter Quantity" required maxlength="4">
+                        </div>
+                        <div class="input-field">
+                            <label>Requisition</label>
+                            <input type="text" id="THErequisition" placeholder="Enter Requisition" required maxlength="27">
+                        </div>   
+                        <div class="input-field">
+                            <label>Quantity</label>
+                            <input type="text" id="PRIquantity" placeholder="Enter Quantity" required maxlength="4">
+                        </div>
+                        <div class="input-field">
+                            <label>Requisition</label>
+                            <input type="text" id="PRIrequisition" placeholder="Enter Requisition" required maxlength="27">
+                        </div>                        
                         
                     </div>
-                    <div class="input-field2" id="inputFieldsContainer">
-                        <!-- Your initial input fields go here -->
-                    </div>
+                  
                 </div>
 
-                
+            
                 <div class="details ID">
                     <div class="fields">
                         <div class="input-field">
@@ -81,47 +107,26 @@
                     </button>
                 </div> 
             </div>
-        </form>
-        <button id="addInputFieldButton" onclick="addInputField()">Add Input Field</button>
+        </form>       
     </div>
 
     <script>
-        function addInputField() {
-            var inputFieldsContainer = document.getElementById("inputFieldsContainer");
-            var newInputField = document.createElement("div");
-            newInputField.innerHTML = `
-            <div class="column">
-                <div class="inner-div">
-                    <div class="input-field" >
-                  
-                        <input type="text" placeholder="Enter Quantity" required maxlength="4">
-
-                    </div>
-
-                    <div class="input-field"> 
-
-                         <input type="text" placeholder="Enter Requisition" required maxlength="27">
-
-                     </div>
-
-                </div>
-            </div>   
-            
-            
-            
-
-            `;
-            inputFieldsContainer.appendChild(newInputField);
-
-            // Scroll the page to show the newly added input fields
-            window.scrollTo(0, document.body.scrollHeight);
-        }
+        
         function passValues() {
         
             var department = document.getElementById("department").value;
         var dateInput = document.getElementById("date").value;
+
         var quantity = document.getElementById("quantity").value;
         var requisition = document.getElementById("requisition").value;
+        
+        var MYquantity = document.getElementById("MYquantity").value;
+        var MYrequisition = document.getElementById("MYrequisition").value;
+        var THEquantity = document.getElementById("THEquantity").value;
+        var THErequisition = document.getElementById("THErequisition").value;
+        var PRIquantity = document.getElementById("PRIquantity").value;
+        var PRIrequisition = document.getElementById("PRIrequisition").value;
+
         var purpose = document.getElementById("purpose").value;
         var requestedByF = document.getElementById("requestedBy").value;
         var requestedByL = document.getElementById("requestedBy").value;
@@ -132,8 +137,18 @@
 
         localStorage.setItem("department", department);
         localStorage.setItem("date", formattedDate);
+
         localStorage.setItem("quantity", quantity);
         localStorage.setItem("requisition", requisition);
+
+        localStorage.setItem("MYquantity", MYquantity);
+        localStorage.setItem("MYrequisition", MYrequisition);
+        localStorage.setItem("THEquantity", THEquantity);
+        localStorage.setItem("THErequisition", THErequisition);
+        localStorage.setItem("PRIquantity", PRIquantity);
+        localStorage.setItem("PRIrequisition", PRIrequisition);
+
+
         localStorage.setItem("purpose", purpose);
         localStorage.setItem("requestedByF", requestedByF);
         localStorage.setItem("requestedByL", requestedByL);
