@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.hidden {
+    display: none;
+}
+
 .input-field2 .inner-div {
     display: flex;
     width: 800px;
