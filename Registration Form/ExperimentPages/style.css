@@ -6,9 +6,71 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    min-height: 100vh;
+
+.input-field2 .inner-div {
+    display: flex;
+    width: 800px;
     
+    flex-direction: row;
+    justify-content: space-between; /* Add space between the input fields */
+    margin: 4px 0;
+}
+
+.column {
+    flex: 1;
+    margin: 5px;
+    padding: 1px;
+}
+
+.inner-div {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+}
+
+.input-field {
+    margin: 8px 0; /* Add vertical margin to separate input fields */
+}
+
+.input-field input[type="text"],
+.input-field input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the form's width as needed */
+.container form {
+    width: 100%;
+    max-width: 800px; /* You can adjust this value as per your design */
+    position: relative;
+    min-height: 490px;
+    background-color: #fff;
+    overflow: hidden;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #4070f4;
 }
 
@@ -41,9 +103,6 @@ body{
     color: #000000;
     padding: 20px;
 }
-
-/* ===== Google Font Import - Poppins ===== =======================================================================================   */
-
 .banner-textQUANT{
     position: absolute;
     top: 260px ;
@@ -58,276 +117,6 @@ body{
     color: #000000;
     padding: 20px;
 }
-
-.banner-textQUANT2{
-    position: absolute;
-    top: 280px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY2{
-    position: absolute;
-    top: 280px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT3{
-    position: absolute;
-    top: 340px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY3{
-    position: absolute;
-    top: 340px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT4{
-    position: absolute;
-    top: 400px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY4{
-    position: absolute;
-    top: 400px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT5{
-    position: absolute;
-    top: 500px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY5{
-    position: absolute;
-    top: 500px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT6{
-    position: absolute;
-    top: 600px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY6{
-    position: absolute;
-    top: 600px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT7{
-    position: absolute;
-    top: 700px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY7{
-    position: absolute;
-    top: 700px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT8{
-    position: absolute;
-    top: 330px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY8{
-    position: absolute;
-    top: 330px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT9{
-    position: absolute;
-    top: 340px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY9{
-    position: absolute;
-    top: 340px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT10{
-    position: absolute;
-    top: 350px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY10{
-    position: absolute;
-    top: 350px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT11{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY11{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-
-.banner-textQUANT12{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY12{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT13{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY13{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT14{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY14{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT15{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY15{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT16{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY16{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT17{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY17{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-
-
-
-
-/* ===== Google Font Import - Poppins ===== =======================================================================================   */
-.banner-textBODY{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-
-
-
-
 .banner-textPURPOSE{
     position: absolute;
     top: 800px ;
@@ -488,6 +277,7 @@ form.secActive .form.first{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+ 
 form .fields .input-field {
     display: flex;
     width: calc(50% - 15px);
@@ -529,7 +319,7 @@ form .fields .input-field2 {
 .input-field input[type="date"]:valid{
     color: #333;
 }
-.container form button, .backBtn{
+.container form button{
     display: flex;
     align-items: center;
     justify-content: center;
