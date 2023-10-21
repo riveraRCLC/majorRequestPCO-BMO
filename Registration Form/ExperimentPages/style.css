@@ -106,7 +106,13 @@ button {
     border-radius: 8px;
     background-color: #4070f4;
 }
+.additional-fields{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Add space between "quantity" and "requisition" */
+    align-items: center; /* Align items vertically */
 
+}
 
 
 .container form .form,
