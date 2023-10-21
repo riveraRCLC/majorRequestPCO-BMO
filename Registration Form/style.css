@@ -40,17 +40,21 @@
   border-radius: 5px;
 }
 
+body {
+  background: #4070f4;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   max-width: 1000px;
   width: 100%;
   border-radius: 6px;
   padding: 30px;
-  margin: 0 15px;
+  margin: 0 auto;
+  margin-top: 25px;
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -59,17 +63,6 @@
 .container form {
   width: 100%;
   max-width: 800px; /* You can adjust this value as per your design */
-  position: relative;
-  min-height: 490px;
-  background-color: #fff;
-  overflow: hidden;
-}
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #4070f4;
 }
 
 .banner-card {
@@ -159,7 +152,6 @@ button {
 }
 .printableArea1 .container {
   width: 1755;
-  height: 1275;
 }
 .printableArea1 .container img {
   width: 100%;
@@ -206,12 +198,10 @@ button {
   height: 100%;
 }
 .container {
-  position: relative;
   max-width: 1000px;
   width: 100%;
   border-radius: 6px;
   padding: 30px;
-  margin: 0 15px;
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -232,14 +222,11 @@ button {
   background-color: #4070f4;
 }
 .container form {
-  position: relative;
-  margin-top: 16px;
   min-height: 490px;
   background-color: #fff;
   overflow: hidden;
 }
 .container form .form {
-  position: absolute;
   background-color: #fff;
   transition: 0.3s ease;
 }
