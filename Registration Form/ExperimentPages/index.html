@@ -62,26 +62,26 @@
 
                         <div class="additional-fields hidden">
                             <div class="input-field">
-                                <input type="text" id="MYquantity" placeholder="Enter Quantity" required maxlength="4">
+                                <input type="text" id="MYquantity" placeholder="Enter Quantity"  maxlength="4">
                             </div>
                             <div class="input-field">
-                                <input type="text" id="MYrequisition" placeholder="Enter Requisition" required maxlength="27">
-                            </div>
-                        </div>
-                        <div class="additional-fields hidden">
-                            <div class="input-field">
-                                <input type="text" id="THEquantity" placeholder="Enter Quantity" required maxlength="4">
-                            </div>
-                            <div class="input-field">
-                                <input type="text" id="THErequisition" placeholder="Enter Requisition" required maxlength="27">
+                                <input type="text" id="MYrequisition" placeholder="Enter Requisition"  maxlength="27">
                             </div>
                         </div>
                         <div class="additional-fields hidden">
                             <div class="input-field">
-                                <input type="text" id="PRIquantity" placeholder="Enter Quantity" required maxlength="4">
+                                <input type="text" id="THEquantity" placeholder="Enter Quantity"  maxlength="4">
                             </div>
                             <div class="input-field">
-                                <input type="text" id="PRIrequisition" placeholder="Enter Requisition" required maxlength="27">
+                                <input type="text" id="THErequisition" placeholder="Enter Requisition"  maxlength="27">
+                            </div>
+                        </div>
+                        <div class="additional-fields hidden">
+                            <div class="input-field">
+                                <input type="text" id="PRIquantity" placeholder="Enter Quantity"  maxlength="4">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" id="PRIrequisition" placeholder="Enter Requisition"  maxlength="27">
                             </div>
                         </div>                     
                         
@@ -101,14 +101,14 @@
                             <input type="text" id="requestedBy" placeholder="Enter Requested by" required>
                         </div>
                     </div>
-                    <button type="submit" value="Click" onclick="passValues();">
+                    <button type="button" onclick="addFields()">Add Quantity and Requisition</button> 
+                    <button type="submit" value="Click" onclick="passValues()">
                         Save
                         <i class="uil uil-navigator"></i>
                     </button>
                 </div> 
             </div>
-        </form>
-        <button type="button" onclick="addFields();">Add Quantity and Requisition</button>       
+        </form>     
     </div>
 
     <script>
