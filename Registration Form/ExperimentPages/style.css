@@ -36,7 +36,8 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
+/*FFEEEL NAKO TUNGOD ANI AYY*/
+/*
 form .fields .input-field,
 form .fields .input-field2 {
     display: flex;
@@ -44,6 +45,8 @@ form .fields .input-field2 {
     flex-direction: column;
     margin: 4px 0;
 }
+*/
+
 
 .input-field label {
     font-size: 12px;
