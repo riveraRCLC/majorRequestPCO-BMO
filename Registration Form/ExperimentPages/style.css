@@ -12,13 +12,6 @@
     display: none;
 }
 
-.input-field2 .inner-div {
-    display: flex;
-    width: 800px;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 4px 0;
-}
 
 .column {
     flex: 1;
@@ -42,6 +35,33 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+form .fields .input-field,
+form .fields .input-field2 {
+    display: flex;
+    width: calc(50% - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input,
+.input-field select {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 10px;
+    height: 42px;
+    margin: 8px 0;
 }
 
 .container {
@@ -148,32 +168,7 @@ form.secActive .form.first {
     flex-wrap: wrap;
 }
 
-form .fields .input-field,
-form .fields .input-field2 {
-    display: flex;
-    width: calc(50% - 15px);
-    flex-direction: column;
-    margin: 4px 0;
-}
 
-.input-field label {
-    font-size: 12px;
-    font-weight: 500;
-    color: #2e2e2e;
-}
-
-.input-field input,
-.input-field select {
-    outline: none;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333;
-    border-radius: 5px;
-    border: 1px solid #aaa;
-    padding: 0 10px;
-    height: 42px;
-    margin: 8px 0;
-}
 
 input :focus,
 input[type="date"] :focus,
