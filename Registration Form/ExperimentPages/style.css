@@ -1,6 +1,7 @@
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,9 +15,8 @@
 .input-field2 .inner-div {
     display: flex;
     width: 800px;
-    
     flex-direction: row;
-    justify-content: space-between; /* Add space between the input fields */
+    justify-content: space-between;
     margin: 4px 0;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .input-field {
-    margin: 8px 0; /* Add vertical margin to separate input fields */
+    margin: 8px 0;
 }
 
 .input-field input[type="text"],
@@ -43,8 +43,6 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-
 
 .container {
     display: flex;
@@ -57,7 +55,7 @@
     border-radius: 6px;
     padding: 30px;
     margin: 0 15px;
-    background-color: #fff;
+    background-color: #f02020;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -67,9 +65,11 @@
     max-width: 800px; /* You can adjust this value as per your design */
     position: relative;
     min-height: 490px;
-    background-color: #fff;
-    overflow: hidden;
+    margin-top: 16px;
+    background-color: #0e0606;
 }
+
+
 body {
     min-height: 100vh;
     display: flex;
@@ -78,81 +78,20 @@ body {
     background: #4070f4;
 }
 
-.banner-card{
-    position:relative;
-}
-
-.banner-card img{
-    max-width: 100%;
-    height: auto;
-}
-.banner-text{
-    position: absolute;
-    top: 127px ;
-    left: 500px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textDEPT{
-    position: absolute;
-    top: 127px ;
-    left: 400px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textDATE{
-    position: absolute;
-    top: 127px ;
-    left: 1200px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textPURPOSE{
-    position: absolute;
-    top: 800px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-
-.banner-textDEPTHEAD{
-    position: absolute;
-    top: 900px ;
-    left: 198px;
-    color: #000000;
-    padding: 20px;
-}
-
-.banner-textDEPTHEAD2{
-    position: absolute;
-    top: 900px ;
-    left: 698px;
-    color: #000000;
-    padding: 20px;
-}
 
 
 
-div, aside, button {
+div,
+aside,
+button {
     display: block;
     margin: 1rem auto;
     text-align: center;
-  }
-.printableArea1{
+}
+
+.printableArea1,
+.printableArea2,
+.printableArea3 {
     position: relative;
     max-width: 1000px;
     width: 100%;
@@ -161,76 +100,31 @@ div, aside, button {
     padding: 30px;
     margin: 0 15px;
     background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.printableArea1 .container{
-   
+
+.printableArea1 .container,
+.printableArea2 .container,
+.printableArea3 .container {
     width: 1755;
     height: 1275;
 }
-.printableArea1 .container img{
+
+.printableArea1 .container img,
+.printableArea2 .container img,
+.printableArea3 .container img {
     width: 100%;
     height: 100%;
 }
 
-.printableArea2{
-    position: relative;
-    max-width: 1000px;
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-.printableArea2 .container{
-   
-    width: 1755;
-    height: 1275;
-}
-.printableArea2 .container img{
-    width: 100%;
-    height: 100%;
-}
-
-.printableArea3{
-    position: relative;
-    max-width: 1000px;
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-.printableArea3 .container{
-   
-    width: 1755;
-    height: 1275;
-}
-.printableArea3 .container img{
-    width: 100%;
-    height: 100%;
-}
-.container{
-    position: relative;
-    max-width: 1000px;
-    width: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-.container header{
+.container header {
     position: relative;
     font-size: 20px;
     font-weight: 600;
     color: #333;
 }
-.container header::before{
+
+.container header::before {
     content: "";
     position: absolute;
     left: 0;
@@ -240,55 +134,50 @@ div, aside, button {
     border-radius: 8px;
     background-color: #4070f4;
 }
-.container form{
-    position: relative;
-    margin-top: 16px;
-    min-height: 490px;
-    background-color: #fff;
-    overflow: hidden;
-}
-.container form .form{
+
+
+
+.container form .form,
+.container form .form.second {
     position: absolute;
     background-color: #fff;
     transition: 0.3s ease;
 }
-.container form .form.second{
+
+.container form .form.second {
     opacity: 0;
     pointer-events: none;
     transform: translateX(100%);
 }
-form.secActive .form.second{
+
+form.secActive .form.second {
     opacity: 1;
     pointer-events: auto;
     transform: translateX(0);
 }
-form.secActive .form.first{
+
+form.secActive .form.first {
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
 }
-.container form .title{
+
+.container form .title {
     display: block;
-    margin-bottom: 8px;
+    margin: 6px 0;
     font-size: 16px;
     font-weight: 500;
-    margin: 6px 0;
     color: #333;
 }
-.container form .fields{
+
+.container form .fields {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
- 
-form .fields .input-field {
-    display: flex;
-    width: calc(50% - 15px);
-    flex-direction: column;
-    margin: 4px 0;
-}
 
+form .fields .input-field,
 form .fields .input-field2 {
     display: flex;
     width: calc(50% - 15px);
@@ -296,12 +185,14 @@ form .fields .input-field2 {
     margin: 4px 0;
 }
 
-.input-field label{
+.input-field label {
     font-size: 12px;
     font-weight: 500;
     color: #2e2e2e;
 }
-.input-field input, select{
+
+.input-field input,
+.input-field select {
     outline: none;
     font-size: 14px;
     font-weight: 400;
@@ -312,18 +203,18 @@ form .fields .input-field2 {
     height: 42px;
     margin: 8px 0;
 }
-.input-field input :focus,
-.input-field select:focus{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+
+input :focus,
+input[type="date"] :focus,
+select:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
 }
-.input-field select,
-.input-field input[type="date"]{
-    color: #707070;
-}
-.input-field input[type="date"]:valid{
+
+input[type="date"]:valid {
     color: #333;
 }
-.container form button{
+
+.container form button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,46 +230,46 @@ form .fields .input-field2 {
     transition: all 0.3s linear;
     cursor: pointer;
 }
-.container form .btnText{
+
+.container form .btnText {
     font-size: 14px;
     font-weight: 400;
 }
-form button:hover{
+
+form button:hover {
     background-color: #265df2;
 }
+
 form button i,
-form .backBtn i{
+form .backBtn i {
     margin: 0 6px;
 }
-form .backBtn i{
+
+form .backBtn i {
     transform: rotate(180deg);
 }
-form .buttons{
+
+form .buttons {
     display: flex;
     align-items: center;
 }
-form .buttons button , .backBtn{
+
+form .buttons button,
+.backBtn {
     margin-right: 14px;
 }
 
 @media (max-width: 750px) {
-    .container form{
-        overflow-y: scroll;
+    .container form {
+        overflow-y: auto; /* Change "scroll" to "auto" to enable the default scrollbar */
     }
-    .container form::-webkit-scrollbar{
-       display: none;
+
+    .container form::-webkit-scrollbar {
+        display: none;
     }
-    form .fields .input-field{
+
+    form .fields .input-field {
         width: calc(100% / 2 - 15px);
     }
-}
-
-@media (max-width: 550px) {
-    form .fields .input-field{
-        width: 100%;
-    }
-}
-.container form .input-field input[type="email"] {
-    display: none;
 }
 
