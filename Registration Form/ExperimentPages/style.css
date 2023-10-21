@@ -8,15 +8,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.hidden {
-    display: none;
-}
+
 .additional-fields {
+    display: none;
     width: 100%;
-    display: flex;
-    justify-content: space-between; /* Add space between "quantity" and "requisition" */
-    align-items: center; /* Align items vertically */
-  }
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
   .additional-fields .input-field {
     width: 48%; /* Adjust the width to your liking, 48% allows some spacing */

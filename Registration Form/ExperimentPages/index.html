@@ -46,7 +46,7 @@
                         </div>
 
 
-                        <div class="additional-fields hidden">
+                        <div class="additional-fields ">
                             <div class="input-field">
                                 <input type="text" id="MYquantity" placeholder="Enter Quantity"  maxlength="4">
                             </div>
@@ -54,7 +54,7 @@
                                 <input type="text" id="MYrequisition" placeholder="Enter Requisition"  maxlength="27">
                             </div>
                         </div>
-                        <div class="additional-fields hidden">
+                        <div class="additional-fields ">
                             <div class="input-field">
                                 <input type="text" id="THEquantity" placeholder="Enter Quantity"  maxlength="4">
                             </div>
@@ -62,7 +62,7 @@
                                 <input type="text" id="THErequisition" placeholder="Enter Requisition"  maxlength="27">
                             </div>
                         </div>
-                        <div class="additional-fields hidden">
+                        <div class="additional-fields ">
                             <div class="input-field">
                                 <input type="text" id="PRIquantity" placeholder="Enter Quantity"  maxlength="4">
                             </div>
@@ -98,15 +98,16 @@
     </div>
 
     <script>
-         function addFields() {
-            const additionalFields = document.querySelectorAll('.additional-fields');
-                for (const field of additionalFields) {
-                    if (field.classList.contains('hidden')) {
-                        field.classList.remove('hidden');
-                        break;
-                    }
+        let currentFieldIndex = 0; // Track the current additional-field to unhide
+
+            function addFields() {
+                const additionalFields = document.querySelectorAll('.additional-fields');
+                
+                if (currentFieldIndex < additionalFields.length) {
+                    additionalFields[currentFieldIndex].style.display = 'flex';
+                    currentFieldIndex++;
                 }
-         }
+            }
         function passValues() {
         
             var department = document.getElementById("department").value;
