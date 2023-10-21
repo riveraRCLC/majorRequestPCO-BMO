@@ -11,6 +11,16 @@
 .hidden {
     display: none;
 }
+.additional-fields {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Add space between "quantity" and "requisition" */
+    align-items: center; /* Align items vertically */
+  }
+
+  .additional-fields .input-field {
+    width: 48%; /* Adjust the width to your liking, 48% allows some spacing */
+  }
 
 .input-field2 .inner-div {
     display: flex;
