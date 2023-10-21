@@ -89,33 +89,6 @@ button {
     text-align: center;
 }
 
-.printableArea1,
-.printableArea2,
-.printableArea3 {
-    position: relative;
-    max-width: 1000px;
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.printableArea1 .container,
-.printableArea2 .container,
-.printableArea3 .container {
-    width: 1755;
-    height: 1275;
-}
-
-.printableArea1 .container img,
-.printableArea2 .container img,
-.printableArea3 .container img {
-    width: 100%;
-    height: 100%;
-}
 
 .container header {
     position: relative;
