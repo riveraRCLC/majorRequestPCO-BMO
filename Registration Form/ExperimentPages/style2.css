@@ -44,286 +44,287 @@ body{
 
 /* ===== Google Font Import - Poppins ===== =======================================================================================   */
 
-.banner-textQUANT{
+.banner-textQUANT {
     position: absolute;
-    top: 260px ;
+    top: 260px;
     left: 120px;
     color: #000000;
     padding: 20px;
 }
-.banner-textBODY{
+
+.banner-textBODY {
     position: absolute;
-    top: 260px ;
+    top: 260px;
     left: 220px;
     color: #000000;
     padding: 20px;
 }
 
-.banner-textQUANT2{
+.banner-textQUANT2 {
     position: absolute;
-    top: 280px ;
+    top: 286.5px;
     left: 120px;
     color: #000000;
     padding: 20px;
 }
-.banner-textBODY2{
+
+.banner-textBODY2 {
     position: absolute;
-    top: 280px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT3{
-    position: absolute;
-    top: 340px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY3{
-    position: absolute;
-    top: 340px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT4{
-    position: absolute;
-    top: 400px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY4{
-    position: absolute;
-    top: 400px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT5{
-    position: absolute;
-    top: 500px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY5{
-    position: absolute;
-    top: 500px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT6{
-    position: absolute;
-    top: 600px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY6{
-    position: absolute;
-    top: 600px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT7{
-    position: absolute;
-    top: 700px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY7{
-    position: absolute;
-    top: 700px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT8{
-    position: absolute;
-    top: 330px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY8{
-    position: absolute;
-    top: 330px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT9{
-    position: absolute;
-    top: 340px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY9{
-    position: absolute;
-    top: 340px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT10{
-    position: absolute;
-    top: 350px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY10{
-    position: absolute;
-    top: 350px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT11{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY11{
-    position: absolute;
-    top: 260px ;
+    top: 286.5px;
     left: 220px;
     color: #000000;
     padding: 20px;
 }
 
-.banner-textQUANT12{
+.banner-textQUANT3 {
     position: absolute;
-    top: 260px ;
+    top: 313.5px;
     left: 120px;
     color: #000000;
     padding: 20px;
 }
-.banner-textBODY12{
+
+.banner-textBODY3 {
     position: absolute;
-    top: 260px ;
+    top: 313.5px;
     left: 220px;
     color: #000000;
     padding: 20px;
 }
-.banner-textQUANT13{
+
+.banner-textQUANT4 {
     position: absolute;
-    top: 260px ;
+    top: 341.5px;
     left: 120px;
     color: #000000;
     padding: 20px;
 }
-.banner-textBODY13{
+
+.banner-textBODY4 {
     position: absolute;
-    top: 260px ;
+    top: 341.5px;
     left: 220px;
     color: #000000;
     padding: 20px;
 }
-.banner-textQUANT14{
+
+.banner-textQUANT5 {
     position: absolute;
-    top: 260px ;
+    top: 370.5px;
     left: 120px;
     color: #000000;
     padding: 20px;
 }
-.banner-textBODY14{
+
+.banner-textBODY5 {
     position: absolute;
-    top: 260px ;
+    top: 370.5px;
     left: 220px;
     color: #000000;
     padding: 20px;
 }
-.banner-textQUANT15{
+
+.banner-textQUANT6 {
     position: absolute;
-    top: 260px ;
+    top: 400.5px;
     left: 120px;
     color: #000000;
     padding: 20px;
 }
-.banner-textBODY15{
+
+.banner-textBODY6 {
     position: absolute;
-    top: 260px ;
+    top: 400.5px;
     left: 220px;
     color: #000000;
     padding: 20px;
 }
-.banner-textQUANT16{
+
+.banner-textQUANT7 {
     position: absolute;
-    top: 260px ;
+    top: 431.5px;
     left: 120px;
     color: #000000;
     padding: 20px;
 }
-.banner-textBODY16{
+
+.banner-textBODY7 {
     position: absolute;
-    top: 260px ;
+    top: 431.5px;
     left: 220px;
     color: #000000;
     padding: 20px;
 }
-.banner-textQUANT17{
+
+.banner-textQUANT8 {
     position: absolute;
-    top: 260px ;
+    top: 463.5px;
     left: 120px;
     color: #000000;
     padding: 20px;
 }
-.banner-textBODY17{
+
+.banner-textBODY8 {
     position: absolute;
-    top: 260px ;
+    top: 463.5px;
     left: 220px;
     color: #000000;
     padding: 20px;
 }
+
+.banner-textQUANT9 {
+    position: absolute;
+    top: 496.5px;
+    left: 120px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textBODY9 {
+    position: absolute;
+    top: 496.5px;
+    left: 220px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textQUANT10 {
+    position: absolute;
+    top: 525.5px;
+    left: 120px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textBODY10 {
+    position: absolute;
+    top: 525.5px;
+    left: 220px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textQUANT11 {
+    position: absolute;
+    top: 565.5px;
+    left: 120px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textBODY11 {
+    position: absolute;
+    top: 565.5px;
+    left: 220px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textQUANT12 {
+    position: absolute;
+    top: 601.5px;
+    left: 120px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textBODY12 {
+    position: absolute;
+    top: 601.5px;
+    left: 220px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textQUANT13 {
+    position: absolute;
+    top: 639.5px;
+    left: 120px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textBODY13 {
+    position: absolute;
+    top: 639.5px;
+    left: 220px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textQUANT14 {
+    position: absolute;
+    top: 679.5px;
+    left: 120px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textBODY14 {
+    position: absolute;
+    top: 679.5px;
+    left: 220px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textQUANT15 {
+    position: absolute;
+    top: 721.5px;
+    left: 120px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textBODY15 {
+    position: absolute;
+    top: 721.5px;
+    left: 220px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textQUANT16 {
+    position: absolute;
+    top: 765.5px;
+    left: 120px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textBODY16 {
+    position: absolute;
+    top: 765.5px;
+    left: 220px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textQUANT17 {
+    position: absolute;
+    top: 811.5px;
+    left: 120px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textBODY17 {
+    position: absolute;
+    top: 811.5px;
+    left: 220px;
+    color: #000000;
+    padding: 20px;
+}
+
+
+
+
+
 
 
 
 
 /* ===== Google Font Import - Poppins ===== =======================================================================================   */
-.banner-textBODY{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textQUANT{
-    position: absolute;
-    top: 260px ;
-    left: 120px;
-    color: #000000;
-    padding: 20px;
-}
-.banner-textBODY{
-    position: absolute;
-    top: 260px ;
-    left: 220px;
-    color: #000000;
-    padding: 20px;
-}
 
 
 
