@@ -47,7 +47,7 @@ body{
 .banner-textQUANT {
     position: absolute;
     top: 260px;
-    left: 120px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
@@ -55,7 +55,7 @@ body{
 .banner-textBODY {
     position: absolute;
     top: 260px;
-    left: 220px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
@@ -63,7 +63,7 @@ body{
 .banner-textQUANT2 {
     position: absolute;
     top: 286.5px;
-    left: 120px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
@@ -71,7 +71,7 @@ body{
 .banner-textBODY2 {
     position: absolute;
     top: 286.5px;
-    left: 220px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
@@ -79,7 +79,7 @@ body{
 .banner-textQUANT3 {
     position: absolute;
     top: 313.5px;
-    left: 120px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
@@ -87,7 +87,7 @@ body{
 .banner-textBODY3 {
     position: absolute;
     top: 313.5px;
-    left: 220px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
@@ -95,7 +95,7 @@ body{
 .banner-textQUANT4 {
     position: absolute;
     top: 341.5px;
-    left: 120px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
@@ -103,7 +103,7 @@ body{
 .banner-textBODY4 {
     position: absolute;
     top: 341.5px;
-    left: 220px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
@@ -111,7 +111,7 @@ body{
 .banner-textQUANT5 {
     position: absolute;
     top: 370.5px;
-    left: 120px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
@@ -119,7 +119,7 @@ body{
 .banner-textBODY5 {
     position: absolute;
     top: 370.5px;
-    left: 220px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
@@ -127,7 +127,7 @@ body{
 .banner-textQUANT6 {
     position: absolute;
     top: 400.5px;
-    left: 120px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
@@ -135,7 +135,7 @@ body{
 .banner-textBODY6 {
     position: absolute;
     top: 400.5px;
-    left: 220px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
@@ -143,7 +143,7 @@ body{
 .banner-textQUANT7 {
     position: absolute;
     top: 431.5px;
-    left: 120px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
@@ -151,7 +151,7 @@ body{
 .banner-textBODY7 {
     position: absolute;
     top: 431.5px;
-    left: 220px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
@@ -159,7 +159,7 @@ body{
 .banner-textQUANT8 {
     position: absolute;
     top: 463.5px;
-    left: 120px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
@@ -167,7 +167,7 @@ body{
 .banner-textBODY8 {
     position: absolute;
     top: 463.5px;
-    left: 220px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
@@ -175,7 +175,7 @@ body{
 .banner-textQUANT9 {
     position: absolute;
     top: 496.5px;
-    left: 120px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
@@ -183,7 +183,7 @@ body{
 .banner-textBODY9 {
     position: absolute;
     top: 496.5px;
-    left: 220px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
@@ -191,7 +191,7 @@ body{
 .banner-textQUANT10 {
     position: absolute;
     top: 525.5px;
-    left: 120px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
@@ -199,122 +199,123 @@ body{
 .banner-textBODY10 {
     position: absolute;
     top: 525.5px;
-    left: 220px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textQUANT11 {
     position: absolute;
-    top: 565.5px;
-    left: 120px;
+    top: 551px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textBODY11 {
     position: absolute;
-    top: 565.5px;
-    left: 220px;
+    top: 551px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textQUANT12 {
     position: absolute;
-    top: 601.5px;
-    left: 120px;
+    top: 579px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textBODY12 {
     position: absolute;
-    top: 601.5px;
-    left: 220px;
+    top: 579px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textQUANT13 {
     position: absolute;
-    top: 639.5px;
-    left: 120px;
+    top: 608px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textBODY13 {
     position: absolute;
-    top: 639.5px;
-    left: 220px;
+    top: 608px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textQUANT14 {
     position: absolute;
-    top: 679.5px;
-    left: 120px;
+    top: 638px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textBODY14 {
     position: absolute;
-    top: 679.5px;
-    left: 220px;
+    top: 638px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textQUANT15 {
     position: absolute;
-    top: 721.5px;
-    left: 120px;
+    top: 670px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textBODY15 {
     position: absolute;
-    top: 721.5px;
-    left: 220px;
+    top: 670px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textQUANT16 {
     position: absolute;
-    top: 765.5px;
-    left: 120px;
+    top: 703px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textBODY16 {
     position: absolute;
-    top: 765.5px;
-    left: 220px;
+    top: 703px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textQUANT17 {
     position: absolute;
-    top: 811.5px;
-    left: 120px;
+    top: 730px;
+    left: 140px; /* Changed left to 140px */
     color: #000000;
     padding: 20px;
 }
 
 .banner-textBODY17 {
     position: absolute;
-    top: 811.5px;
-    left: 220px;
+    top: 730px;
+    left: 240px; /* Changed left to 240px */
     color: #000000;
     padding: 20px;
 }
+
 
 
 
