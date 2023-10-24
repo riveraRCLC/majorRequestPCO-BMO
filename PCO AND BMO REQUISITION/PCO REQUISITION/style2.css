@@ -386,6 +386,22 @@ body{
     padding: 20px;
 }
 
+.banner-textDEPTHEADPG1{
+    position: absolute;
+    top: 890px ;
+    left: 198px;
+    color: #000000;
+    padding: 20px;
+}
+
+.banner-textDEPTHEAD2PG1{
+    position: absolute;
+    top: 890px ;
+    left: 698px;
+    color: #000000;
+    padding: 20px;
+}
+
 
 
 div, aside, button {
